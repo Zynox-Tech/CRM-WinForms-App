@@ -5,7 +5,30 @@
 A simple CRM desktop application built using **C# Windows Forms** and **SQL Server**, following a basic **3-Tier Architecture** structure.
 
 ---
+# Developed By
 
+## Zynox Tech
+
+Website: https://zynoxtech.site
+Email: [hello@zynoxtech.site](mailto:hello@zynoxtech.site)
+Location: Abbottabad, Pakistan
+
+Zynox Tech is a software development company specializing in:
+
+* Enterprise Software Solutions
+* Web Applications
+* Mobile Applications
+* Artificial Intelligence Solutions
+* Custom Business Automation Systems
+
+We build scalable, reliable, and user-focused technology solutions that help businesses improve efficiency and digital operations.
+
+For software development services and technology partnerships:
+
+Website: https://zynoxtech.site
+Email: [hello@zynoxtech.site](mailto:hello@zynoxtech.site)
+
+---
 # Overview
 
 This project is a **Customer Relationship Management (CRM) desktop application** designed to manage clients and system users.
