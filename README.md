@@ -10,7 +10,9 @@ A simple CRM desktop application built using **C# Windows Forms** and **SQL Serv
 ## Zynox Tech
 
 Website: https://zynoxtech.site
+
 Email: [hello@zynoxtech.site](mailto:hello@zynoxtech.site)
+
 Location: Abbottabad, Pakistan
 
 Zynox Tech is a software development company specializing in:
@@ -26,7 +28,8 @@ We build scalable, reliable, and user-focused technology solutions that help bus
 For software development services and technology partnerships:
 
 Website: https://zynoxtech.site
-Email: [hello@zynoxtech.site](mailto:hello@zynoxtech.site)
+
+Email: [hello@zynoxtech.site]
 
 ---
 # Overview
