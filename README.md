@@ -397,9 +397,32 @@ Possible future enhancements include:
 
 ---
 
-# Developed By
+# About Zynox Tech
 
-**Nawaf Altowairqi**
+Zynox Tech builds modern and scalable software solutions for businesses and organizations.
 
-GitHub
-https://github.com/TheNawafTech
+Our services include:
+
+* Custom Software Development
+* Enterprise Applications
+* Mobile Applications
+* Web Platforms
+* AI-Powered Solutions
+* Business Automation Systems
+
+For custom software solutions and technology partnerships:
+
+**Website:** https://zynoxtech.site
+**Email:** [hello@zynoxtech.site](mailto:hello@zynoxtech.site)
+**Location:** Abbottabad, Pakistan
+
+---
+
+<div align="center">
+
+### Developed by **Zynox Tech**
+
+Building Modern Technology Solutions for Businesses
+
+</div>
+
