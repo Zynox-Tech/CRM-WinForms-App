@@ -1,19 +1,20 @@
 # CRM Desktop Application
 
-(Customer Relationship Management)
+## Customer Relationship Management System
 
-A simple CRM desktop application built using **C# Windows Forms** and **SQL Server**, following a basic **3-Tier Architecture** structure.
+A structured CRM desktop application built using **C# Windows Forms** and **SQL Server**, following a **3-Tier Architecture** approach.
+
+The system is designed to manage clients, application users, and permission-based access while maintaining a clear separation between the presentation, business logic, and data access layers.
 
 ---
+
 # Developed By
 
 ## Zynox Tech
 
-Website: https://zynoxtech.site
-
-Email: [hello@zynoxtech.site](mailto:hello@zynoxtech.site)
-
-Location: Abbottabad, Pakistan
+**Website:** https://zynoxtech.site
+**Email:** [hello@zynoxtech.site](mailto:hello@zynoxtech.site)
+**Location:** Abbottabad, Pakistan
 
 Zynox Tech is a software development company specializing in:
 
@@ -27,116 +28,220 @@ We build scalable, reliable, and user-focused technology solutions that help bus
 
 For software development services and technology partnerships:
 
-Website: https://zynoxtech.site
-
-Email: [hello@zynoxtech.site]
+**Website:** https://zynoxtech.site
+**Email:** [hello@zynoxtech.site](mailto:hello@zynoxtech.site)
 
 ---
-# Overview
 
-This project is a **Customer Relationship Management (CRM) desktop application** designed to manage clients and system users.
+# Project Overview
 
-The system allows users to store client information and control access to different parts of the application through user permissions.
+The **CRM Desktop Application** is a Customer Relationship Management system designed to manage clients and system users through a structured Windows desktop environment.
 
-The project was built **entirely by me from start to finish**, including:
+The system allows users to maintain customer information and control access to different parts of the application through a permission-based user management system.
+
+The project includes:
 
 * Database design
 * Application architecture
 * Business logic implementation
 * Windows Forms user interface
+* Client management
+* User administration
+* Permission-based access control
 
-The goal of this project was to practice **designing and implementing a structured desktop application using a multi-layer architecture**, while improving **backend development skills** and strengthening **problem-solving abilities when building multi-layered systems**.
+The application was developed to demonstrate the design and implementation of a structured desktop application using a multi-layer architecture.
 
 ---
 
 # Architecture
 
-The application follows a **3-Tier Architecture** to separate responsibilities between different layers.
+The application follows a **3-Tier Architecture** that separates application responsibilities into dedicated layers.
 
-## Presentation Layer (Windows Forms)
+```text
+Presentation Layer
+        ↓
+Business Layer
+        ↓
+Data Access Layer
+        ↓
+SQL Server Database
+```
 
-Handles the user interface and user interaction.
+This architecture improves code organization, maintainability, and separation of concerns.
 
-Examples include:
+---
 
-* Login screen
+## Presentation Layer
+
+The Presentation Layer is developed using **Windows Forms** and handles application interfaces and user interaction.
+
+The layer includes:
+
+* Login interface
 * Client management forms
 * User management screens
-* Basic validation before sending data to the business layer
+* Permission management interfaces
+* Input validation
+* Application navigation
 
-The UI communicates with the database **only through the Business Layer**.
+The user interface communicates with the database through the Business Layer.
 
 ---
 
 ## Business Layer
 
-Contains the core application logic.
+The Business Layer contains the core application logic.
 
 Responsibilities include:
 
-* Validating client data
-* Managing application operations
-* Handling permission checks
-* Coordinating communication between UI and database
+* Client data validation
+* User management operations
+* Permission checks
+* Application workflow management
+* Coordination between the UI and Data Access Layer
+
+This layer separates business rules from the user interface and database implementation.
 
 ---
 
 ## Data Access Layer
 
-Responsible for communicating with the **SQL Server database**.
+The Data Access Layer manages communication with the **SQL Server database**.
 
 Responsibilities include:
 
 * Executing SQL queries
-* Reading and writing data
+* Reading database records
+* Writing application data
 * Managing database connections
+* Processing database operations
 
-This layer isolates database operations from the rest of the system.
+This layer isolates database functionality from the rest of the application.
 
 ---
 
 # Main Features
 
-## Login System
+## Login and Authentication
+
+The application provides a database-backed login system.
+
+Authentication functionality includes:
 
 * User authentication
-* Login validation using database records
+* Login validation
+* Database-based user verification
 * Permission-based access control
+
+Users are granted access to application functionality according to their assigned permissions.
 
 ---
 
 ## User Management
 
-* Add users
+The user management system allows administrators to manage application users.
+
+Features include:
+
+* Add new users
+* View users
+* Find users
+* Update users
 * Delete users
 * Manage user permissions
+
+The system provides dedicated Windows Forms for different user management operations.
+
+---
+
+## Permission Management
+
+The CRM application includes a permission-based access system.
+
+Permissions can be assigned to users to control access to different application functionality.
+
+This provides a basic access control mechanism for managing system users.
 
 ---
 
 ## Client Management
 
+The client management module provides functionality for maintaining customer records.
+
+Features include:
+
 * Add new clients
+* View client records
 * Update client information
 * Delete clients
 * Search for clients
+
+The system provides dedicated interfaces for individual client operations.
+
+---
+
+## Client Search
+
+Users can search for stored client records through the client search interface.
+
+This allows users to quickly locate customer information maintained within the CRM database.
+
 ---
 
 ## Data Validation
 
-* Basic input validation
-* Prevent storing invalid data
+The application includes basic input validation.
+
+Validation functionality helps:
+
+* Reduce invalid input
+* Maintain structured records
+* Improve data consistency
+* Prevent incomplete data processing
+
+---
+
+# Application Screenshots
+
+Explore the desktop interfaces, client management functionality, user administration tools, and permission system of the **CRM Desktop Application**.
+
+## Login and Main Application Interface
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/975865b6-c053-46a0-87f8-41474821aa84" alt="CRM Application Interface" width="45%" />
+  &nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/0ec74afe-86ca-482a-8c21-3f826350c19a" alt="CRM Main Interface" width="45%" />
+</p>
+
+## Client Management
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b3aa1b18-baf6-4a00-b5c8-ddc8d51ab888" alt="CRM Client Management" width="45%" />
+  &nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/12b9d463-6a26-44ec-a044-7b0a95baa7e2" alt="CRM Client Records" width="45%" />
+</p>
+
+## User and Permission Management
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0524f063-8c1a-4beb-a570-d0adedb472c5" alt="CRM User Management" width="45%" />
+  &nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/64ad9750-0bc7-4bdb-a026-4da473a05f3f" alt="CRM Permission Management" width="45%" />
+</p>
 
 ---
 
 # Database
 
-The application uses a **SQL Server database**.
+The application uses **Microsoft SQL Server** for structured data storage.
 
-Main tables include:
+The database maintains client records, system users, and application permissions.
 
-## Clients
+---
 
-Stores customer information such as:
+## Clients Table
+
+The Clients table stores customer information including:
 
 * ClientID
 * ClientName
@@ -145,11 +250,15 @@ Stores customer information such as:
 * TotalOrders
 * TotalPurchaseValue
 
+This table maintains customer-related CRM records.
+
 ---
 
-## Users
+## Users Table
 
-Stores system users and their permissions:
+The Users table stores system user information and access permissions.
+
+Stored information includes:
 
 * UserID
 * UserName
@@ -158,64 +267,109 @@ Stores system users and their permissions:
 * Password
 * Permissions
 
+The permission field is used by the application to manage user access.
+
 ---
+
+# Database Setup
 
 The database schema and sample data are included in:
 
-```
+```text
 Database/CRMproject.sql
 ```
 
-Running this script will automatically create:
+Running the SQL script creates:
 
-* The database
-* All required tables
-* Sample data for testing
+* CRM database
+* Required database tables
+* Database structure
+* Sample testing data
 
 ---
 
-# Technologies Used
+# Technology Stack
+
+## Application Development
 
 * C#
 * .NET Framework
+
+## Desktop User Interface
+
 * Windows Forms
-* SQL Server
+* WinForms Controls
+
+## Database
+
+* Microsoft SQL Server
+* SQL
+
+## Data Access
+
 * ADO.NET
+* SQL Server Connections
+
+## Architecture
+
 * 3-Tier Architecture
+* Presentation Layer
+* Business Layer
+* Data Access Layer
+
+---
+
+# Application Architecture
+
+The project separates application functionality into dedicated layers.
+
+```text
+Windows Forms UI
+        ↓
+Business Logic
+        ↓
+Data Access Components
+        ↓
+ADO.NET
+        ↓
+SQL Server Database
+```
+
+The architecture helps isolate interface logic, application rules, and database operations.
 
 ---
 
 # Project Structure
 
-The project is organized into multiple modules that separate UI forms, business logic, data access, settings, and database scripts.
+The project is organized into multiple modules that separate user interfaces, business logic, data access, settings, and database scripts.
 
 ```text
-CRM Desktop Application
-│
-├── BusinessLayer
+CRM-WinForms-App/
+
+├── BusinessLayer/
 │   ├── ClsBusinessLayer.cs
 │   └── BusinessLayer.csproj
 │
-├── ClsClient
+├── ClsClient/
 │   ├── ClsClient.cs
 │   └── ClsClient.csproj
 │
-├── ClsDataAccessSettings
+├── ClsDataAccessSettings/
 │   ├── ClsDataAccessSettings.cs
 │   └── ClsDataAccessSettings.csproj
 │
-├── ClsDataLayer
+├── ClsDataLayer/
 │   ├── ClsDataLayer.cs
 │   └── ClsDataLayer.csproj
 │
-├── ClsUser_Person
+├── ClsUser_Person/
 │   ├── ClsUser.cs
-│   └── related project files
+│   └── Related project files
 │
-├── Database
+├── Database/
 │   └── CRMproject.sql
 │
-├── Screenshots
+├── Screenshots/
 │   ├── login.png
 │   ├── add_user.png
 │   ├── client_list.png
@@ -223,68 +377,91 @@ CRM Desktop Application
 │   ├── search_client.png
 │   └── user_roles.png
 │
-├── Settings
+├── Settings/
 │   ├── Settings.cs
 │   └── Settings.csproj
 │
-├── frmAddNewClient
-├── frmAddNewUser
-├── frmDeleteUser
-├── frmFindUser
-├── frmMainScreen
-├── frmManageUsers
-├── frmPermissions0
-├── frmRemoveClient
-├── frmSearchClient
-├── frmUpdateClient(After FindUser First)
-├── frmUpdateClient
-├── frmUpdateUser0
-├── frmViewClients
-├── frmViewUsers
+├── frmAddNewClient/
+├── frmAddNewUser/
+├── frmDeleteUser/
+├── frmFindUser/
+├── frmMainScreen/
+├── frmManageUsers/
+├── frmPermissions0/
+├── frmRemoveClient/
+├── frmSearchClient/
+├── frmUpdateClient(After FindUser First)/
+├── frmUpdateClient/
+├── frmUpdateUser0/
+├── frmViewClients/
+├── frmViewUsers/
 │
 ├── App.config
 ├── CRM.sln
 └── README.md
-````
-
-This structure reflects the project’s modular organization, where each form or functional area is separated into its own project or folder, while business logic and data access are isolated in dedicated layers.
-
-
-# How to Run the Project
-
-## 1. Clone the Repository
-
-```
-git clone https://github.com/TheNawafTech/CRM-WinForms-App.git
 ```
 
-or download the project as a ZIP file.
+This structure reflects the modular organization of the application.
+
+Each functional area is separated into dedicated projects or components while business logic and data access operations remain isolated within their respective layers.
 
 ---
 
-## 2. Create the Database
+# Installation and Setup
+
+## Requirements
+
+Before running the project, install:
+
+* Visual Studio
+* .NET Framework development tools
+* Microsoft SQL Server
+* SQL Server Management Studio
+* Git
+
+---
+
+# Clone the Repository
+
+Clone the project using Git:
+
+```bash
+git clone https://github.com/Zynox-Tech/CRM-WinForms-App.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd CRM-WinForms-App
+```
+
+---
+
+# Create the Database
 
 Open **SQL Server Management Studio (SSMS)**.
 
-Open the script located in:
+Locate the SQL script:
 
-```
+```text
 Database/CRMproject.sql
 ```
 
-Run the script to create the database and tables.
+Open and execute the script.
+
+The script creates the required database structure and testing data.
 
 ---
 
-## 3. Configure the Connection String
+# Configure the Database Connection
 
 Open:
 
-```
+```text
 App.config
 ```
 
-Update the connection string according to your SQL Server configuration.
+Update the SQL Server connection string according to your environment.
 
 Example:
 
@@ -296,93 +473,111 @@ Example:
 </connectionStrings>
 ```
 
+Ensure that the server and database configuration match your local SQL Server environment.
+
 ---
 
-## 4. Open the Solution
+# Open the Solution
 
-Open the project in **Visual Studio**:
+Open the Visual Studio solution:
 
-```
+```text
 CRM.sln
 ```
 
+Visual Studio will load the CRM projects and application components.
+
 ---
 
-## 5. Set the Startup Project
+# Set the Startup Project
 
-Inside **Visual Studio**:
+Inside Visual Studio:
 
-1. Right click on:
+1. Locate the executable Windows Forms project.
+2. Right-click the project.
+3. Select:
 
-```
-CRM.WinForms
-```
-
-2. Select:
-
-```
+```text
 Set as Startup Project
 ```
 
+This ensures Visual Studio launches the CRM desktop application instead of a class library.
+
 ---
 
-## 6. Run the Application
+# Run the Application
 
 Press:
 
-```
+```text
 F5
 ```
 
-or click **Start** in Visual Studio.
+Alternatively, click **Start** inside Visual Studio.
 
----
-## Screenshots
+The CRM desktop application will launch and connect to the configured SQL Server database.
 
-![Login](./Screenshots/login.png)
-
-![Add User](./Screenshots/add_user.png)
-
-![User Roles](./Screenshots/user_roles.png)
-
-![Client List](./Screenshots/client_list.png)
-
-![Search Client](./Screenshots/search_client.png)
-
-![Remove User](./Screenshots/remove_user.png)
 ---
 
 # Demo Video
 
+A demonstration video of the CRM Desktop Application is available at:
+
 https://bit.ly/CRM-System-Demo
+
+The demo provides an overview of the application's interface and core CRM functionality.
 
 ---
 
 # Troubleshooting
 
-## Application cannot connect to database
+## Application Cannot Connect to Database
 
-Make sure:
+Ensure that:
 
 * SQL Server is running
-* The connection string in **App.config** is correct
-* The database script was executed successfully
+* The database script has been executed
+* The database exists
+* The connection string in `App.config` is correct
+* The SQL Server instance name is correctly configured
 
 ---
 
-## Startup project error
+## Class Library Cannot Be Started Directly
 
-If Visual Studio shows:
+If Visual Studio displays:
 
-```
+```text
 Class Library cannot be started directly
 ```
 
-Set the startup project to:
+The incorrect project has been selected as the startup project.
 
+Locate the executable Windows Forms project and select:
+
+```text
+Set as Startup Project
 ```
-CRM.WinForms
-```
+
+Run the application again.
+
+---
+
+# Security Considerations
+
+The current project demonstrates a structured CRM architecture and basic permission management.
+
+Production implementations should consider:
+
+* Password hashing
+* Secure credential storage
+* Parameterized SQL queries
+* Role-based access control
+* Database access restrictions
+* Audit logging
+* Secure connection string management
+
+Sensitive database credentials should not be committed to public source control.
 
 ---
 
@@ -390,10 +585,55 @@ CRM.WinForms
 
 Possible future enhancements include:
 
-* Implementing password hashing for improved security
-* Expanding the permission management system
-* Adding more advanced client search and filtering
-* Improving the user interface design
+* Password hashing and secure authentication
+* Advanced role-based access control
+* Improved permission management
+* Advanced client search and filtering
+* Customer interaction history
+* Sales and order management
+* CRM analytics dashboard
+* Business reporting
+* Data export functionality
+* Improved user interface design
+* Audit logging
+* Cloud database integration
+
+---
+
+# Contributing
+
+Contributions, feature suggestions, and improvements are welcome.
+
+To contribute:
+
+1. Fork the repository.
+2. Create a new feature branch.
+
+```bash
+git checkout -b feature/AmazingFeature
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "Add AmazingFeature"
+```
+
+4. Push the branch.
+
+```bash
+git push origin feature/AmazingFeature
+```
+
+5. Open a Pull Request.
+
+---
+
+# License
+
+This project's use, modification, and distribution are subject to the license terms provided with the repository.
+
+Review the repository license before using the project in commercial or redistributed software.
 
 ---
 
@@ -405,10 +645,13 @@ Our services include:
 
 * Custom Software Development
 * Enterprise Applications
+* Desktop Applications
 * Mobile Applications
 * Web Platforms
 * AI-Powered Solutions
 * Business Automation Systems
+
+We focus on developing reliable, scalable, and user-centered technology solutions.
 
 For custom software solutions and technology partnerships:
 
@@ -422,7 +665,6 @@ For custom software solutions and technology partnerships:
 
 ### Developed by **Zynox Tech**
 
-Building Modern Technology Solutions for Businesses
+**Building Modern Technology Solutions for Businesses and Organizations**
 
 </div>
-
